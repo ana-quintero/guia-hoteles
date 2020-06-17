@@ -12,5 +12,9 @@
   },
   "author": "Ana Quintero",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Anaquipa/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/Anaquipa/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {}
 }
