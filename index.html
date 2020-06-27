@@ -1,142 +1,196 @@
-        <!doctype html>
-        <html lang="en">
-        <head>
-            <!-- Required meta tags -->
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-            <link rel="stylesheet" href="css/main.css">
-            <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
-            <title>Digital MeVe</title>
-        </head>
-        <body>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <a class="nav-bar-brand" href="#">Digital MeVe</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+    <title>Digital MeVe</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="nav-bar-brand" href="#">Digital MeVe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link"  href="./about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link"  href="./precios.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link"  href="#">Terminos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link"  href="./contacto.html">Contacto</a></li>   
+            </ul>    
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+     <h1>Digital MeVe</h1>
+ </div>	
+ <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol> 
+    </nav>
+    <div class="row">
+        <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Como funciona?</button>
+        </div>
+        <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse2">¿Como puedo pagar?</button>
+        </div>
+        <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#servicios" aria-expanded="false" aria-controls="multiCollapse3">Y ¿si quiero todos los servicios?</button>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 collapse multi-collapse" id="funciona">
+         <p>
+             <h3>Como funciona?</h3>
+             <p> Selecciona el servicio que requieras para tu empresa o negocio</p>
+         </p>
+     </div>
+     <div class="col-sm-4 collapse multi-collapse" id="pago">
+       <p>
+        <h2>Como puedo pagar?</h2>
+        <p> Elige tu medio de pago favorito</p>
+    </p>	
+</div>	
+<div class="col-sm-4 collapse multicollapse" id="servicios">
+   <p>
+    <h2>Y ¿Si quiero todos los servicios?</h2>
+    <p> Si necesitas todos los servicios te ofrecemos una mejor tarifa</p> 
+</p>	
+</div>	
+</div>	
+<hr>
+
+<img src="images/digitalme.jpg" class="img-fluid" alt="Responsive image">
+
+<div class="d-flex flex-wrap flex-row-reverse">
+    <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="images/marketing.png" alt="Responsive image">
+        <div class="card-body">
+            <h5 class="card-title">Marketing digital</h5>
+            <h6 class="card-subtitle text-muted">De que trata</h6>
+            <p class="card-text"> Agencia de marketing digital con las mejores estrategias en: Social Media, SEO, SEM, Branding y Publicidad.</p>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Marketing Digital</button>
+        </div>
+    </div>
+    <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="images/desarrollo.png" alt="Responsive image">
+        <div class="card-body">
+            <h5 class="card-title">Desarrollo Web</h5>
+            <h6 class="card-subtitle text-muted">En que consiste</h6>
+            <p class="card-text"> Creamos tu sitio web o aplicacion movil adaptandonos a tus necesidades y a las del mercado.</p>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Desarrollo Web</button>     
+        </div>    
+    </div>
+    <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="images/creacion.png" alt="Responsive image">
+        <div class="card-body">
+            <h5 class="card-title">Creacion de Contenidos</h5>
+            <h6 class="card-subtitle text-muted">Que es</h6>
+            <p class="card-text"> Creacion de contenidos animados o estaticos, con las mejores pautas y campañas en redes sociales.</p> 
+        </div>
+        <div>
+            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Creacion de Contenidos</button>
+        </div>
+    </div>
+    <div class="card card-digital d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="images/generacion.png" alt="mResponsive image">
+        <div class="card-body">
+            <h5 class="card-title">Generacion de Contenidos para Redes Sociales</h5>
+            <h6 class="card-subtitle text-muted">En que se basa</h6>
+            <p> Generamos contenido en redes sociales para poder encontrar a tu cliente ideal, enviandolos a tu negocio.</p>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Generacion de contenidos</button>
+        </div>
+    </div>
+    <div class="card card-digital d-flex flex-column justify-content-between ml-2">
+        <img class="card-img-top" src="images/todos.jpg" alt="marketing img">
+        <div class="card-header">
+            Lo mejor 
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"><span class="oi oi-star"></span> Todos los servicios</h5>
+            <p class="card-text">Obten todos nuestros servicios a un precio especial.</p>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#todoslos"><span class="oi oi-plus footer-address-icon"></span>Todos los servicios</button>     
+        </div>    
+    </div>
+</div>	
+
+<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-tittle" id="exampleModalLabel">Contactanos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link"  href="./about.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link"  href="./precios.html">Precios</a></li>
-                        <li class="nav-item"><a class="nav-link"  href="#">Terminos y condiciones</a></li>
-                        <li class="nav-item"><a class="nav-link"  href="./contacto.html">Contacto</a></li>   
-                        </ul>    
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Tu email</label>
+                        <input type="text" class="form-control" id="recipient-name">
                     </div>
-                </nav>
-
-                <div class="jumbotron">
-                	<h1>Digital MeVe</h1>
-                </div>	
-                <div class="container">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item active" aria-current="page">Home</li>
-                        </ol> 
-                    </nav>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Como funciona?</button>
-                        </div>
-                        <div class="col-sm-4">
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse2">¿Como puedo pagar?</button>
-                        </div>
-                        <div class="col-sm-4">
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#servicios" aria-expanded="false" aria-controls="multiCollapse3">Y ¿si quiero todos los servicios?</button>
-                        </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Mensaje</label>
+                        <textarea class="form-control" id="message-text"></textarea>
                     </div>
-
-                    <div class="row">
-                      <div class="col-sm-4 collapse multi-collapse" id="funciona">
-                         <p>
-                             <h3>Como funciona?</h3>
-                             <p> Selecciona el servicio que requieras para tu empresa o negocio</p>
-                         </p>
-                     </div>
-                     <div class="col-sm-4 collapse multi-collapse" id="pago">
-                       <p>
-                        <h2>Como puedo pagar?</h2>
-                        <p> Elige tu medio de pago favorito</p>
-                    </p>	
-                </div>	
-                <div class="col-sm-4 collapse multicollapse" id="servicios">
-                   <p>
-                    <h2>Y ¿Si quiero todos los servicios?</h2>
-                    <p> Si necesitas todos los servicios te ofrecemos una mejor tarifa</p> 
-                </p>	
-            </div>	
-        </div>	
-        <hr>
-
-        <img src="images/digitalme.jpg" class="img-fluid" alt="Responsive image">
-
-        <div class="d-flex flex-wrap flex-row-reverse">
-          <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="images/marketing.png" alt="Responsive image">
-            <div class="card-body">
-                <h5 class="card-title">Marketing digital</h5>
-                <h6 class="card-subtitle text-muted">De que trata</h6>
-                <p class="card-text"> Agencia de marketing digital con las mejores estrategias en: Social Media, SEO, SEM, Branding y Publicidad.</p>
+                </form>
             </div>
-            <div>
-                <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Marketing Digital</button>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Enviar</button>
             </div>
-        </div>
-        <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="images/desarrollo.png" alt="Responsive image">
-            <div class="card-body">
-                <h5 class="card-title">Desarrollo Web</h5>
-                <h6 class="card-subtitle text-muted">En que consiste</h6>
-                <p class="card-text"> Creamos tu sitio web o aplicacion movil adaptandonos a tus necesidades y a las del mercado.</p>
-            </div>
-            <div>
-                <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Desarrollo Web</button>     
-            </div>    
-        </div>
-        <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="images/creacion.png" alt="Responsive image">
-            <div class="card-body">
-                <h5 class="card-title">Creacion de Contenidos</h5>
-                <h6 class="card-subtitle text-muted">Que es</h6>
-                <p class="card-text"> Creacion de contenidos animados o estaticos, con las mejores pautas y campañas en redes sociales.</p> 
-            </div>
-            <div>
-                <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Creacion de Contenidos</button>
-            </div>
-        </div>
-        <div class="card card-digital d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="images/generacion.png" alt="mResponsive image">
-            <div class="card-body">
-                <h5 class="card-title">Generacion de Contenidos para Redes Sociales</h5>
-                <h6 class="card-subtitle text-muted">En que se basa</h6>
-                <p> Generamos contenido en redes sociales para poder encontrar a tu cliente ideal, enviandolos a tu negocio.</p>
-            </div>
-            <div>
-                <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Generacion de contenidos</button>
-            </div>
-        </div>
-        <div class="card card-digital d-flex flex-column justify-content-between ml-2">
-            <img class="card-img-top" src="images/todos.jpg" alt="marketing img">
-            <div class="card-header">
-               Lo mejor 
-            </div>
-            <div class="card-body">
-                <h5 class="card-title"><span class="oi oi-star"></span> Todos los servicios</h5>
-                <p>Obten todos nuestros servicios a un precio especial.</p>
-            </div>
-            <div>
-                <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Todos los servicios</button>     
-            </div>    
-        </div>
-        
-
-    </div>	
+        </div>     
+    </div> 
 </div>
 
+
+<div class="modal fade" id="todoslos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-tittle" id="exampleModalLabel">Contactanos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Tu email</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Mensaje</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+        </div>     
+    </div> 
+</div>
 
 
 <footer>
