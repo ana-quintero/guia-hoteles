@@ -83,7 +83,7 @@
             <p class="card-text"> Agencia de marketing digital con las mejores estrategias en: Social Media, SEO, SEM, Branding y Publicidad.</p>
         </div>
         <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Marketing Digital</button>
+            <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promocion" data-content="Mira lo Que hacemos por ti"><span class="oi oi-plus footer-address-icon"></span>Marketing Digital</button>
         </div>
     </div>
     <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
@@ -94,7 +94,7 @@
             <p class="card-text"> Creamos tu sitio web o aplicacion movil adaptandonos a tus necesidades y a las del mercado.</p>
         </div>
         <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Desarrollo Web</button>     
+            <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Desarrollo Web</button>     
         </div>    
     </div>
     <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
@@ -105,7 +105,7 @@
             <p class="card-text"> Creacion de contenidos animados o estaticos, con las mejores pautas y campañas en redes sociales.</p> 
         </div>
         <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Creacion de Contenidos</button>
+            <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Creacion de Contenidos</button>
         </div>
     </div>
     <div class="card card-digital d-flex flex-column justify-content-between ml-2">
@@ -116,7 +116,7 @@
             <p> Generamos contenido en redes sociales para poder encontrar a tu cliente ideal, enviandolos a tu negocio.</p>
         </div>
         <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Generacion de contenidos</button>
+            <button  type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus footer-address-icon"></span>Generacion de contenidos</button>
         </div>
     </div>
     <div class="card card-digital d-flex flex-column justify-content-between ml-2">
@@ -236,6 +236,7 @@
 <script>
     $(function(){
         $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
       
     });
 </script>
