@@ -57,7 +57,7 @@
                 <div class="table-responsive">    
                 <table class="table table-striped">
                     <thead class="thead-dark">
-                        <th>1 Asesoria</th>
+                        <th>Asesoria</th>
                         <th>Paginas Web</th>
                         <th>Facebook</th>
                         <th>Instagram</th>
@@ -95,29 +95,70 @@
                 </div>
 
                 <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-
-                    <div class="d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header" style="background-color: blue; color: white;">
-                                Tarjetas aceptadas
+                    <div class="accordion" id="accordionTarjetas">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAmerican" aria-expanded="true" aria-controls="collapseAmerican">
+                                      Tarjeta American Express  
+                                    </button>
+                                </h5>    
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Tarjeta American Express</li>
-                                <li class="list-group-item">Tarjeta Mastercard</li>
-                                <li class="list-group-item">Tarjeta Visa</li>
-                                <li class="list-group-item">PSE</li>
-                            </ul>
-                        </div>    
-                    </div>
 
+                            <div id="collapseAmerican" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Paga con tu tarjeta American Express
+                                </div>    
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseMastercard" aria-expanded="false" aria-controls="collapseMastercard">
+                                      Tarjeta Master Card 
+                                    </button>
+                                </h5>    
+                            </div>
+                            <div id="collapseMastercard" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Paga con tu tarjeta Masterd card
+                                </div>    
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseVisa" aria-expanded="false" aria-controls="collapseVisa">
+                                      Tarjeta Visa 
+                                    </button>
+                                </h5>    
+                            </div>
+                            <div id="collapseVisa" class="collapse" aria-labelledby="headingTree" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Paga con tu tarjeta Visa
+                                </div>    
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePSE" aria-expanded="false" aria-controls="collapsePSE">
+                                      PSE  
+                                    </button>
+                                </h5>    
+                            </div>
+                            <div id="collapsePSE" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Paga por PSE
+                                </div>    
+                            </div> 
+                        </div>
                 </div>
-                <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
-                <div class="form-group">
-                    <textarea id="comentario" class="form-control" rows="8"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
-
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+                
+            </div>
+        </div>
 
     <footer>
         <div class="row">
