@@ -72,13 +72,38 @@
 </div>	
 <hr>
 
-<img src="images/digitalme.jpg" class="img-fluid" alt="Responsive image">
+<div id="carouselControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="images/digitalmee.png" alt="Primer slide">
+        </div>
+         <div class="carousel-item">
+            <img class="d-block w-100" src="images/marketingg.png" alt="Segundo slide">
+        </div>
+         <div class="carousel-item">
+            <img class="d-block w-100" src="images/todoss.png" alt="Tercer slide">
+        </div>
+         <div class="carousel-item">
+            <img class="d-block w-100" src="images/desarrolloo.png" alt="Cuarto slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+
 
 <div class="d-flex flex-wrap flex-row-reverse">
     <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="images/marketing.png" alt="Responsive image">
         <div class="card-body">
-            <h5 class="card-title">Marketing digital</h5>
+            <h5 class="card-title" data-toggle="popover" title="Somos los mejores">Marketing digital</h5>
             <h6 class="card-subtitle text-muted">De que trata</h6>
             <p class="card-text"> Agencia de marketing digital con las mejores estrategias en: Social Media, SEO, SEM, Branding y Publicidad.</p>
         </div>
@@ -89,7 +114,7 @@
     <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="images/desarrollo.png" alt="Responsive image">
         <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-code"></span> Desarrollo Web</h5>
+            <h5 class="card-title" data-toggle="popover" title="Diseñamos tu sitio Web" data-content="segun tus necesidades"><span class="oi oi-code"></span> Desarrollo Web</h5>
             <h6 class="card-subtitle text-muted">En que consiste</h6>
             <p class="card-text"> Creamos tu sitio web o aplicacion movil adaptandonos a tus necesidades y a las del mercado.</p>
         </div>
@@ -100,7 +125,7 @@
     <div class=" card card-digital d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="images/creacion.png" alt="Responsive image">
         <div class="card-body">
-            <h5 class="card-title">Creacion de Contenidos</h5>
+            <h5 class="card-title"data-toggle="popover" title="Creamos tus contenidos" data-content="Lo hacemos por ti">Creacion de Contenidos</h5>
             <h6 class="card-subtitle text-muted">Que es</h6>
             <p class="card-text"> Creacion de contenidos animados o estaticos, con las mejores pautas y campañas en redes sociales.</p> 
         </div>
@@ -111,7 +136,7 @@
     <div class="card card-digital d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="images/generacion.png" alt="mResponsive image">
         <div class="card-body">
-            <h5 class="card-title">Generacion de Contenidos para Redes Sociales</h5>
+            <h5 class="card-title" data-toggle="popover" title="Generamos tus contenidos" data-content="Mira lo Que hacemos por ti">Generacion de Contenidos para Redes Sociales</h5>
             <h6 class="card-subtitle text-muted">En que se basa</h6>
             <p> Generamos contenido en redes sociales para poder encontrar a tu cliente ideal, enviandolos a tu negocio.</p>
         </div>
@@ -236,8 +261,10 @@
 <script>
     $(function(){
         $("[data-toggle='tooltip']").tooltip();
-        $("[data-toggle='popover']").popover();
-      
+        $('[data-toggle="popover"]').popover();
+        $('.carousel').carousel({
+            interval: 2000
+        });
     });
 </script>
 </body>
