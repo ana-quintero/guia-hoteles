@@ -152,7 +152,7 @@
         <div class="card-body">
             <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Si adquieres todos nuestros servicios te damos un SUPER DESCUENTO!"><span class="oi oi-star"></span> Todos los servicios</h5>
             <p class="card-text">Obten todos nuestros servicios a un precio especial.</p>
-            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
         </div>
         <div>
             <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#todoslos"><span class="oi oi-plus footer-address-icon"></span>Todos los servicios</button>     
@@ -255,7 +255,7 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script>
@@ -263,7 +263,24 @@
         $("[data-toggle='tooltip']").tooltip();
         $('[data-toggle="popover"]').popover();
         $('.carousel').carousel({
-            interval: 2000
+            interval: 1500
+        });
+        $('#contacto').on('show.bs.modal', function (e){
+            console.log('el modal contacto se esta mostrando');
+
+            $('#contactoBtn').removeClass('btn-outline-success');
+            $('#contactoBtn').addClass('btn-primary');
+            $('#contactoBtn').prop('disabled',true);
+        });
+        $('#contacto').on('shown.bs.modal', function (e){
+            console.log('el modal contacto se mostro');
+        });
+        $('#contacto').on('hide.bs.modal', function (e){
+            console.log('el modal contacto se esta oculta');
+        });
+        $('#contacto').on('hidden.bs.modal', function (e){
+            console.log('el modal contacto se oculto');
+            $('#contactoBtn').prop('disabled',false);
         });
     });
 </script>
