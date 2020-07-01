@@ -1,21 +1,23 @@
 @yellow: #fffa19;
 
+.margenes(@top: 0px, @bottom: 0px){
+  margin-top: @top;
+  margin-bottom: @bottom;
+}
+
 .jumbotron {
   background-color: @yellow;
   color: black;
-  margin-top: 50px;
-  margin-bottom: 10px; }
+  .margenes(50px, 0px); }
 
 footer {
   padding: 10px 10px 0 10px;
   background-color: @yellow;
-  margin-top: 10px;
-  margin-bottom: 0px; }
+  .margenes(10px, 0px); }
 
 .card-digital {
   flex: 1 200px;
-  margin-top: 10px;
-  margin-bottom: 0px; }
+  .margenes(10px, 0px); }
 
 .btn-reserva {
   width: 100%;
